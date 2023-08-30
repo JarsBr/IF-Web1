@@ -23,9 +23,13 @@
 		</font>
 		<br><br><br>
 		
-		<a href="https://www.treinaweb.com.br/blog/o-que-e-o-angular-e-para-que-serve" target="_black"> FONTE-1 </a>
+		<a href="https://www.treinaweb.com.br/blog/o-que-e-o-angular-e-para-que-serve" target="_black"> 1-FONTE(1-2) </a>
 		<br>
-		<a href="https://www.hostinger.com.br/tutoriais/o-que-e-angular" target="_black" title="Busca no Google"> FONTE-2 </a>
+		<a href="https://www.hostinger.com.br/tutoriais/o-que-e-angular" target="_black"> 2-FONTE(1-2) </a>
+		<br>
+		<a href="https://www.devmedia.com.br/angular-cli-instalacao/38247" target="_black"> 3-FONTE(3-4) </a>
+		<br>
+		<a href="https://www.devmedia.com.br/angular-cli-como-criar-e-executar-um-projeto-angular/38246" target="_black"> 4-FONTE(5-6) </a>
 		<br>
 		<p> ---------------------------------------------------------------- </p>
 		
@@ -33,57 +37,94 @@
 		<p>
 		É um <b>framework</b>(funções e componentes genéricos pré-prontos, feitos para agiliza o processo, poupam tempo e evitam retrabalho para o desenvolvedor) JavaScript de código aberto mantido pela Google para a construção de SPA (sigla para Single Page Applications ou Aplicações de Página Única). Resumidamente, uma SPA é basicamente uma aplicação web construída em uma só página, na qual a interação e a navegação entre as sessões de uma página ocorrem de maneira a qual não é necessário recarregar a página em cada uma dessas mudanças.
 		</p>
+		<p>
+		Sua finalidade é nos dar ferramentas necessárias para criação de aplicações SPA, além disso também deixa o desenvolvimento deste tipo de aplicação mais simples e otimizado. Com ele, podemos desenvolver aplicações web voltadas tanto para resoluções desktop quanto para resoluções mobile, tornando-as dinâmicas, modernas e escaláveis.		
+		</p>
 		<h2> <a href=#menu> Voltar ao menu </a></h2>
 		
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<p> ---------------------------------------------------------------- </p>
-		<br>		
+		
 		
 		<h2> <a name="h22"> 2 - Versões </a></h2>
 		<p>
-
+		Quando falamos de AngularJS ou Angular 1 estamos nos referindo a um framework anunciado pelo Google em 2010, que embora tenha sido muito utilizado, alcançando popularidade suficiente para estar presente em alguns projetos legados ainda hoje, tinha problemas de performance e em sua arquitetura. Principalmente por esse motivo, o AngularJS nunca chegou a versão 2 e foi encerrado em 2016 com o lançamento do Angular 2, um projeto completamente novo, apesar de ter um nome parecido com o do seu predecessor.
+		</p>
+		<p>
+		Foi também nesse momento que a Google decidiu que o TypeScript seria a linguagem oficial para o desenvolvimento de aplicações Angular e não mais o JavaScript, utilizado no AngularJS.
+		</p>
+		<p>
+		Também por esse motivo, o Angular e o AngularJS não tem nenhuma compatibilidade. Além dessa mudança o Angular também ganhou uma poderosa ferramenta de linha de comando, o Angular CLI, dedicado a criação de artefatos para o projeto, deploy e testes.
+		</p>
+		<p>
+		A versão 2, chamada hoje somente de Angular, foi uma reescrita completa do código e tornou-se uma arquitetura completamente diferente, mantendo apenas o nome – porém sem o JS no final. Nesta nova ferramenta, foram seguidos padrões da web moderna, técnicas e boas práticas que foram aprendidas com os erros cometidos no desenvolvimento da ferramenta anterior.
 		</p>
 		<h2> <a href=#menu> Voltar ao menu </a></h2>
 		
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<p> ---------------------------------------------------------------- </p>
-		<br>		
+		<p> ---------------------------------------------------------------- </p>		
 		
 		<h2> <a name="h23"> 3 - Instalando o Angular Cli </a></h2>
 		<p>
-
+		O primeiro passo para utilizar o Angular CLI é realizar a sua instalação e, para tal, é necessário ter o Node.JS instalado. Caso ainda não o tenha, acesse o site do Node.js e baixe a última versão destinada ao seu sistema operacional.
+		</p>
+		<p>
+		Com o Node.JS instalado, temos à disposição o comando npm, necessário para instalar o Angular CLI. Neste ponto, será preciso abrir o terminal do seu sistema operacional e digitar a instrução:
+		</p>
+		<code>
+		npm install -g @angular/cli
+		</code>
+		<p>
+		Essa instrução, normalmente, requer um bom tempo para que seja concluída, pois diversas bibliotecas do Node.JS serão obtidas através da internet.
 		</p>
 		<h2> <a href=#menu> Voltar ao menu </a></h2>
 		
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<p> ---------------------------------------------------------------- </p>
-		<br>		
+		<p> ---------------------------------------------------------------- </p>		
 		
 		<h2> <a name="h24"> 4 - Verificar ser a instalação esta ok </a> </h2>
 		<p>
-
+		Abra um novo terminal e execute o comando <code>ng --version</code> para verificar a versão do Angular instalado.
 		</p>
 		<h2> <a href=#menu> Voltar ao menu </a></h2>
 		
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<p> ---------------------------------------------------------------- </p>
-		<br>		
+		<p> ---------------------------------------------------------------- </p>		
 		
 		<h2> <a name="h25"> 5 - Criando um projeto em Angular </a></h2>
 		<p>
-
+		Utilizamos o comando ng new para criar um novo projeto em Angular. Ao executar esse comando, será criada uma nova pasta contendo uma estrutura de diretórios com os arquivos necessários para iniciar um projeto nesse framework, como mostra a Figura 1.
 		</p>
+		<code>
+		ng new devmedia
+		</code>
+		<p>
+		Uma necessidade de todo desenvolvedor é ter um servidor HTTP em sua máquina para poder testar, de forma fácil e imediata, as alterações realizadas nos arquivos do projeto. Pensando nesse problema, o Angular CLI disponibilizou o comando ng serve.
+		</p>
+		<code>
+		ng serve
+		</code>
+		<p>
+		Por padrão, o servidor é criado escutando na porta 4200, entretanto, é possível alterá-la usando alguns parâmetros, como no exemplo abaixo.
+		<br>Exemplo de uso de ng serve alterando a porta padrão:
+		</p>
+		<code>
+		ng serve --port 9090
+		</code>
 		<h2> <a href=#menu> Voltar ao menu </a></h2>
 		
 		
 		<h2> <a name="h26"> 6 - Executando aplicações em Angular </a></h2>
 		<p>
-
+		Suponha que você precise criar um projeto em Angular e queira mudar o prefixo de todos os seus componentes do valor padrão "app" para "my", além de evitar a criação de arquivos de teste e a instalação das dependências. Para fazer isso, deve ser executado o seguinte comando:
 		</p>
+		<code>
+		ng new myapp --prefix my --skip-tests --skip-install
+		</code>
+		<p>
+		Uma vez que temos o projeto criado, podemos iniciar um servidor HTTP na porta 8080 e que seja visível para qualquer máquina da rede com o comando a seguir:
+		</p>
+		<code>
+		ng serve --port 8080 --host 0.0.0.0
+		</code>
 		<h2> <a href=#menu> Voltar ao menu </a></h2>
-		
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		
+				
 		<footer > 
         <p>&copy; 2023 Meu Site. Todos os direitos reservados a mim mesmo.</p>
 		</footer>
