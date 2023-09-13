@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+	<head> 
+   		<link rel="shortcut icon" href="imgs/logo2.png"> 
+   		<meta charset="utf-8"/> 
+   		<title>Tarefa-Formulario</title> 
+	</head> 
+	<body> 
+	<h4><a href="formulario.html">Voltar para Forms Lobby</a></h4>
+		<font face="Consolas" size="4">
+		
+			<fieldset>
+			<legend>Pesquisa de Emprego</legend>
+			<form action="#" method="post">
+				<fieldset>
+					<legend>Dados</legend>
+					
+					<p>
+					<label for="nome">Nome</label>
+					<input type="text" id="nome" placeholder="Digite seu nome" autocomplete="off" maxlength="4" size="40" required="" />
+					</p>
+					
+					<p>
+					<label for="nome">Sobrenome</label>
+					<input type="text" id="sobrenome" placeholder="Digite seu sobrenome" autocomplete="off" maxlength="4" size="40" required="" />
+					</p>
+					
+					<p>
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" placeholder="E-mail" autocomplete="off" required="" />
+					</p>
+					
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Experiecias</legend>
+					
+					<p>
+					Area:
+					<br>
+					<input type="radio" name="Area" value="0" checked>Nao decidi ainda <br>
+					<input type="radio" name="Area" value="1">Font-end <br>
+					<input type="radio" name="Area" value="1">Back-end <br> 
+					<input type="radio" name="Area" value="1">Full-stack <br>
+					</p>
+					
+					<p>
+					Tenho conhecimento sobre:
+					<br>
+					<input type="checkbox" name="html" id="html" value="html">
+					<label for="copia">Html</label>
+					<br>
+					<input type="checkbox" name="css" id="css" value="css">
+					<label for="diretor">Css</label>
+					<br>
+					<input type="checkbox" name="java" id="java" value="java">
+					<label for="diretor">Java</label>
+					<br>
+					<input type="checkbox" name="c++" id="c++" value="c++">
+					<label for="diretor">C++</label>
+					<br>
+					<input type="checkbox" name="js" id="js" value="js">
+					<label for="diretor">JavaScript</label>
+					<br>
+					</p>
+					
+					<p>
+					<label for="tempo">Quantos meses de expeciencia?</label>
+					<input typer="number" id="tempo" requered="" />
+					</p>
+					
+					<p>
+					<label for="salario">Salario desejado?</label>
+					<input typer="number" id="tempo" requered="" />
+					</p>
+					
+					<p>
+					<label for="arquivo">Curiculo</label>
+					<input type="file" name="fatos" id="fatos">
+					<br>
+					</p>
+					
+					<p>
+					<label for="mensagem">Porque deseja ser escolhido para essa vaga?</label>
+					<br>
+					<textarea type="text" id="mensagem" name="mensagem" rows="3" placeholder="Mensagem" autocomplete="off" required="">
+					</textarea>
+					</p>
+					
+				
+				</fieldset>
+				<p align="center">
+				<input type="submit" name="Enviar" value="Enviar">
+				<input type="reset" name="Limpar" Value="Limpar">
+				</p>
+			</fieldset>
+			</form>
+				
+		
+	</body> 
+
+
+</html> 

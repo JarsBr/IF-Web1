@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+	<head> 
+   		<link rel="shortcut icon" href="imgs/logo2.png"> 
+   		<meta charset="utf-8"/> 
+   		<title>Tarefa-Formulario</title> 
+	</head> 
+	<body> 
+	<h4><a href="formulario.html">Voltar para Forms Lobby</a></h4>
+		<font face="Consolas" size="4">
+		
+			<fieldset>
+			<legend>Fale sobre o evento</legend>
+			<form action="#" method="post">
+				<fieldset>
+					<legend>Informaçoes Pessoais</legend>
+					
+					<p>
+					<label for="nome">Seu Nome</label>
+					<input type="text" id="nome" placeholder="Digite seu nome" autocomplete="off" maxlength="4" size="40" required="" />
+					</p>
+					
+					<p>
+					<label for="telefone">Seu Telefone</label>
+					<input type="text" id="nome" placeholder="Digite seu Telefone" autocomplete="off" maxlength="4" size="40" required="" />
+					</p>
+				
+					
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Sobre o evento</legend>
+					
+					<p>
+					Qual evento voce fez:
+					<br>
+					<input type="radio" name="assunto" value="0" checked>Evento Java <br>
+					<input type="radio" name="assunto" value="1">Evento Python <br>
+					<input type="radio" name="assunto" value="2">Evento SQL <br> 
+					<input type="radio" name="assunto" value="3">Evento BigDate <br>
+					</p>
+
+					<p>
+					<label for="nota">Deixe uma nota para o evento:</label>
+					<br>
+					<input type="radio" name="nota" value="1">Pessimo<br>
+					<input type="radio" name="nota" value="2">Ruim<br> 
+					<input type="radio" name="nota" value="3">Ok<br>
+					<input type="radio" name="nota" value="4">Bom<br>
+					<input type="radio" name="nota" value="5">Otimo<br>
+
+					
+					<p>
+					<label for="nome">Data do evento?</label>
+					<input type="date" id="data" name="data" requered="" />
+					</p>
+					
+					
+					<p>
+					<label for="mensagem">Comente sobre o evento</label>
+					<br>
+					<textarea type="text" id="mensagem" name="mensagem" rows="5" placeholder="Mensagem" autocomplete="off" required="">
+					</textarea>
+					</p>
+					
+				
+				</fieldset>
+				<p align="center">
+				<input type="submit" name="Enviar" value="Enviar">
+				<input type="reset" name="Limpar" Value="Limpar">
+				</p>
+			</fieldset>
+			</form>
+						
+				
+		
+	</body> 
+
+
+</html> 
