@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="imgs/logo2.png">
+    <meta charset="UTF-8">
+    <title>Intro CSS</title>
+
+    <style>
+        h2 {
+            text-align:center;
+        }
+    </style>
+
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    <a href="../index.html">Voltar</a><br>
+    <h1>CSS3</h1>
+    <h2>Oque é CSS (Cascading Style Sheets)</h2>
+    
+    <p>
+        Os arquivos <strong>CSS</strong> são folhas de estilos, que são nada mais nada menos que uma
+        coleçao de regras de formatação que podem ser aplicadas a um documento <strong>HTML</strong>, 
+        que serve para estilizar o documento, assim controlando a estética do site.
+        <ul class="none">
+        <li><strong>HTML</strong> controla a estrutura da pagina</li>
+        <li><strong>CSS</strong> determina sua aparência</li>
+        </ul>
+    </p>
+
+    <p class="centro">  
+        Formas de aplicar CSS no documento:<br>
+    <ul>
+        <li>Inline - Estilo colocando dentro da tag especifica no documento HTML</li>
+        <li>Incorporado - Estilo dentro da tag &lt;style&gt; no &lt;head&gt; do documento HTML</li>
+        <li>Folha de estilo externa - Estilo dentro de um  documento .css, e usando 
+            &lt;link rel="stylesheet" href="nome_arquivo.css"&gt; dentro do &lt;head&gt; no HTML</li>
+    </ul>
+    </p>
+    <p class="destaque">
+        A ordem de prioridade dos estilos é de cima para baixo, ou seja, os estilos mais abaixo 
+        podem 'sobrescrever' os estilos mais acima.
+    </p>
+
+    <p class="centro">
+        Exemplo regra CSS
+    </p>
+    <p class="yellow">
+        p.centro {<br>
+            &nbsptext-align: center;<br>
+            &nbspcolor: green;<br>
+            &nbspfont-size: 25px;<br>
+        }       
+    </p>
+    <p>
+        <ul>
+            <li>Seletor: Elemento(tag) p</li>
+            <li>Declarações: text-aling: center;  font-size: 25px;  color: green;</li>
+            <li>Propriedades: text-aling  color  font-size</li>
+        </ul>
+    </p> 
+    <p class="centro">
+       Tipos seletores
+    </p>
+    <p class="purpel">
+        Seletor Universal: Representa todos os elementos <br>
+        Representa por <strong>*</strong>
+    </p>
+    <p class="yellow">
+        * {<br>
+            &nbspcolor: green;<br>
+        }
+    </p>
+
+    <p class="purpel">
+        Seletor de Tipo(elemento): Representa todos de um determinado elemento  <br>
+        Representa por <strong>&lt;tag&gt;</strong>
+    </p>
+    <p class="yellow">
+        p {<br>
+            &nbspcolor: red;<br>
+        }
+        <br>
+        h1 {<br>
+            &nbspcolor: yellow;<br>
+        }
+    </p>
+
+    <p class="purpel">
+        Seletor de classe: Aplica estilo a todos elementos que pertecem a aquela class. <br>
+        Representa por <strong>.</strong>
+    </p>
+    <p class="yellow">
+        .verde {<br>
+            &nbspcolor: green;<br>
+        }
+        <br>
+        h1.verde {<br>
+            &nbspcolor: green;<br>
+        }
+    </p>
+    <p class="destaque">
+            No <strong>.verde</strong> aplica a cor verde a qualquer elemento que possua a class="verde"
+            <br>
+            No <strong>h1.verde</strong> aplica a cor verde apenas a elementos h1 que possuem a class="verde"
+    </p> 
+
+    <p class="purpel">
+        Seletor de ID: Aplica estilo a elemento com o atributo id definido <br>
+        Representa por <strong>.</strong>
+    </p>
+    <p class="yellow">
+        #corAzul {<br>
+            &nbspcolor: blue;<br>
+        }
+        <br>
+        h1#corAzul {<br>
+            &nbspcolor: blue;<br>
+        }
+    </p>
+    <p class="destaque">
+            No <strong>.verde</strong> aplica a cor azul a qualquer elemento que possua o id="corAzul"
+            <br>
+            No <strong>h1.verde</strong> aplica a cor azul apenas a elementos h1 que possuem a id="corAzul"
+    </p> 
+
+</body>
+</html>

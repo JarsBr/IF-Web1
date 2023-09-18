@@ -1,0 +1,49 @@
+* {
+    font-family: consolas;
+}
+p {
+    color: blue;
+    font-size: 20px;
+}
+
+p.centro {
+    text-align: center;
+    color: green;
+    font-size: 25px;
+    
+}
+
+p.destaque {
+    color: red;
+    background-color: yellow;
+}
+
+p.purpel {
+    color: purple;
+    text-align: center;
+    font-size: 22px;
+}
+
+.yellow {
+    
+    color: yellow;
+    background-color: grey;
+}
+
+h1 {
+    color: red;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: circle;
+    background: #cccccc;
+    padding: 10px;
+}
+
+ul.none {
+    list-style-position: inside;
+    list-style-type: none;
+    background: #cccccc;
+    padding: 10px;
+}
