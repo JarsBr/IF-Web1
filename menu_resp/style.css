@@ -4,13 +4,55 @@
     padding: 0;
 }
 
-h2 { 
-    padding: 20px 5px;
+.foto-spider {
+    float: right;
 }
 
-body {
-    background-color: #e2e2e2;
+h2 { 
+    padding: 20px 5px;
+
 }
+
+.hero h1 {
+    background-color: #f0f0f0; /* Cor de fundo que você deseja */
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 10px 10px 10px 1%;
+
+}
+
+.hero h2 {
+    background-color: #f0f0f0; /* Cor de fundo que você deseja */
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 10px 10px 10px 5%;
+}
+
+.hero h3 {
+    background-color: #f0f0f0; /* Cor de fundo que você deseja */
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10%;
+
+}
+
+.hero footer {
+    background-color: #f0f0f0; /* Cor de fundo que você deseja */
+
+}
+
+
+
+body {
+    background-color: #ffffff;
+    background-image: url("../imgs/fundo.png");
+    background-size: 45%;
+
+}
+
 
 a {
     text-decoration: none;
@@ -21,7 +63,7 @@ a {
     padding-inline: 16px;
 }
 
-.nav {
+.nav { 
     max-width: 1280px;
     height: 70px;
     margin-inline: auto;
@@ -76,6 +118,10 @@ a {
     body {
         font-size: medium;
         text-align: justify;
+    }
+
+    .foto-spider{
+        display: none;
     }
     .hamburger {
         display: block;
@@ -139,6 +185,10 @@ a {
         transform: rotate(90deg); /* Gira o ícone em 90 graus */
         transition: 0.3s;
     
+    }
+    
+    .hero {
+        text-align: center;
     }
 
 }
