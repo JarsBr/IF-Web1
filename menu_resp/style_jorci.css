@@ -1,39 +1,48 @@
-body{
+/* Define que a margem padrão para o corpo da página é 0 */
+body {
     margin: 0;
 }
 
-ul{
+/* Remove estilos de lista e define outras propriedades */
+ul {
     list-style: none;
     padding: 0;
     overflow: hidden;
-    transition: all .5s;
+    transition: all .5s; /* Adiciona uma transição suave para animações */
 }
 
-nav{
+/* Estiliza a barra de navegação */
+nav {
     background-color: black;
     padding: 0 20px;
     justify-content: space-between;
     align-items: center;
 }
 
-h1, p{
+/* Estiliza o texto dentro da barra de navegação */
+h1, p {
     color: white;
 }
-nav, ul{
-    display:  flex;
+
+/* Define o layout flex para a barra de navegação e a lista */
+nav, ul {
+    display: flex;
     flex-direction: row;
 }
 
-li{
+/* Adiciona espaçamento interno aos itens da lista */
+li {
     padding: 0 20px;
 }
 
-h1{
+/* Estiliza o cabeçalho principal */
+h1 {
     margin: 0;
     padding: 10px;
 }
 
-button{
+/* Estiliza o botão de menu mobile */
+button {
     background-color: transparent;
     border: none;
     color: #fff;
@@ -41,41 +50,43 @@ button{
     position: absolute;
     right: 10px;
     top: 10px;
-    display: none;
+    display: none; /* Inicialmente oculta o botão */
 }
 
-li:hover,
-h1:hover,
-button:hover{
+/* Aplica estilos quando os elementos são hoverados (passam o mouse por cima) */
+li:hover, h1:hover, button:hover {
     cursor: pointer;
     opacity: 0.8;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2); /* Adiciona fundo semitransparente */
     border-radius: 30px;
 }
-button:focus ~ul{
+
+/* Controla a altura da lista quando o botão de menu é focado */
+button:focus ~ ul {
     height: 260px;
 }
 
-@media (max-width:768px) {
-    nav, ul{
-        flex-direction: column;
+/* Estilos para dispositivos com largura máxima de 768px (responsivo) */
+@media (max-width: 768px) {
+    nav, ul {
+        flex-direction: column; /* Altera o layout para empilhamento vertical */
     }
-    ul{
-        text-align: center;
+    ul {
+        text-align: center; /* Centraliza o texto da lista */
         margin: 0;
-        height: 0;
+        height: 0; /* Inicialmente esconde a lista */
     }
-    nav{
+    nav {
         padding-top: 0px;
-        align-items: flex-start;
+        align-items: flex-start; /* Alinha os itens à esquerda */
     }
-    h1{
+    h1 {
         margin: 10px;
     }
-    button{
-        display: flex;
+    button {
+        display: flex; /* Exibe o botão de menu mobile */
     }
-    ul,li{
-        width: 100%;
+    ul, li {
+        width: 100%; /* Define a largura máxima para a lista e seus itens */
     }
 }
