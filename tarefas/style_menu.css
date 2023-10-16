@@ -48,7 +48,7 @@ h2 {
 
 body {
     background-color: #ffffff;
-    /*background-image: url("../imgs/fundo.png");*/
+    background-image: url("../imgs/fundo.png");
     background-size: 45%;
 
 }
@@ -192,8 +192,3 @@ a {
     }
 
 }
-
-/*
-    ANIMAÇÃO TEXTO
-*/
-
