@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<link rel="shortcut icon" href="imgs/logo.png">
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0" />
+    <link rel="stylesheet" href="../forms/style_form.css">
+    <title>Smart TV</title>
+</head>
+<body>
+  <a href="../menu-tarefas.html">Voltar</a>
+  <div class="box">
+  <h1>Televisão - <span id="status">Desligada</span></h1>
+
+  <div id="tv">
+    <h3>Canal: <span id="canal">1</span></h3>
+    <h3>Volume: <span id="volume">10</span></h3>
+  </div>
+
+  <div id="controle-remoto">
+    <fieldset>
+      <legend>Televisão</legend>
+    <button class="button" id="ligarDesligar">Ligar/Desligar</button>
+    <br><br>
+    <button class="button" id="infoCanal">Info do Canal</button>
+    </fieldset>
+    <fieldset>
+      <legend>Canal</legend>
+    <button class="button" id="canalAnterior">Canal Anterior</button>
+    <br><br>
+    <button class="button" id="proximoCanal">Próximo Canal</button>
+    </fieldset>
+    <fieldset>
+      <legend>Volume</legend>
+    <button class="button" id="diminuirVolume">Diminuir Volume</button>
+    <br><br>
+    <button class="button" id="aumentarVolume">Aumentar Volume</button>
+  </fieldset>
+    
+  </div>
+</div>
+  <script src="controle.js"> </script>
+</body>
+</html>
