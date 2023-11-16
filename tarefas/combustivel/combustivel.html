@@ -6,8 +6,31 @@
     <title>Atividade Combustível</title>
     <link rel="stylesheet" href="../forms/style_form.css">
     <script src="calcular.js"></script>
+    <script defer src="../../menu_resp/menu.js"></script>
+	<link rel="stylesheet" href="../../menu_resp/menu.css">
 </head>
 <body>
+
+    
+		<header class="header">
+			<div class="menu-container"></div>
+			<script>
+
+				const linkLogoMenu = '../../imgs/logo-menu.png';
+				const linkHamburger = '../../imgs/menu-hamburger.png';
+
+				const menuItems = [
+					{ text: 'Voltar', link: '../menu-tarefas.html' },
+					{ text: '...', link: '#' },
+					{ text: '...', link: '#' }
+				];
+
+				document.addEventListener("DOMContentLoaded", function () {
+					createMenu(menuItems, linkLogoMenu, linkHamburger);
+				});
+			</script>
+		</header>
+		<br>
     <a href="../menu-tarefas.html">Voltar</a>
     <div class="box">
     <h1 class="gasolina">Calcular Combustivel</h1>

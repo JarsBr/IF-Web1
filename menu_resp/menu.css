@@ -13,6 +13,14 @@ h2 {
 
 }
 
+.texto-index {
+    font-size: larger;
+    display: inline-flex;
+    background-color: gray;
+    border-radius: 3px;
+    margin: 1%;
+}
+
 .hero h1 {
     background-color: #f0f0f0;
     padding: 10px 30px;
@@ -43,7 +51,6 @@ h2 {
     background-color: #f0f0f0;
 
 }
-
 
 
 body {

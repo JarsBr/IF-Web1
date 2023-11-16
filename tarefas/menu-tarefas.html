@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<link rel="shortcut icon" href="imgs/logo.png">
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="initial-scale=1.0" />
-		<link rel="stylesheet" href="style_menu.css">
-		<script defer src="../menu_resp/menu.js"></script>
-		<title>Tarefas</title>
-	</head>
-	<body>
-		
-		
-		<header class="header">
-			<nav class="nav">
-				<a href="" class="logo"><img src="../imgs/logo-menu.png" alt=""></a>
-				<button class="hamburger"><img src="../imgs/menu-hamburger.png" alt=""></button>
-				<ul class="nav-list">
-					<li><a href="../index.html">Menu Principal</a></li>
-					<li><a href="html_css/intro_css.html">CSS</a></li>
-					<li><a href="html-base/pagina_angular.html">Angular</a></li>
-				</ul>
-			</nav>
-		</header>
 
-		<div class="foto-spider">
-			<img src="../imgs/foto.png" alt="">
-		</div>
+<head>
+	<link rel="shortcut icon" href="imgs/logo.png">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0" />
+	<link rel="stylesheet" href="style_menu.css">
+	<script defer src="../menu_resp/menu.js"></script>
+	<title>Tarefas</title>
+</head>
 
-		<main class="hero">
+<body>
+
+	<header class="header">
+		<div class="menu-container"></div>
+		<script>
+
+			const linkLogoMenu = '../imgs/logo-menu.png';
+			const linkHamburger = '../imgs/menu-hamburger.png';
+
+			const menuItems = [
+				{ text: 'Menu Inicial', link: '../' },
+				{ text: 'Projeto Angular', link: 'https://angular-jars.netlify.app', target: '_blank' },
+				{ text: 'Projeto Sala', link: '' }
+			];
+
+			document.addEventListener("DOMContentLoaded", function () {
+				createMenu(menuItems, linkLogoMenu, linkHamburger);
+			});
+		</script>
+	</header>
+
+
+	<div class="foto-spider">
+		<img src="../imgs/foto.png" alt="">
+	</div>
+
+	<main class="hero">
 
 
 		<h1>Tarefas</h1>
@@ -35,83 +44,102 @@
 
 		<h2 class="fundo-h2">4 agosto - 10 agosto</h2>
 		<br>
-		<h3 class="fundo-h3"><sub><a href="outras-coisas/Web - Pesquisa - Versões - HTML.pdf" target="_blank"><img src="../imgs/tarefa-feita.png"></sub><sup>Tarefa:Pesquisa - Versões - HTML</a></sup></h3>
+		<h3 class="fundo-h3"><sub><a href="outras-coisas/Web - Pesquisa - Versões - HTML.pdf" target="_blank"><img
+						src="../imgs/tarefa-feita.png"></sub><sup>Tarefa:Pesquisa - Versões - HTML</a></sup></h3>
 		<br>
 
 
 		<h2>11 agosto - 17 agosto</h2>
 		<br>
-		<h3><sub><a href="html-base/comentarios.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Tarefa:Página com comentários</a></sup></h3>
+		<h3><sub><a href="html-base/comentarios.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Tarefa:Página com
+				comentários</a></sup></h3>
 		<br>
 
 		<h2>18 agosto - 24 agosto</h2>
 		<br>
-		<h3><sub><a href="https://site-web1-jars.netlify.app" target="_blank"><img src="../imgs/tarefa-feita.png"></sub><sup>Tarefa:Hospedagem de sites</a></sup></h3>
+		<h3><sub><a href="https://site-web1-jars.netlify.app" target="_blank"><img
+						src="../imgs/tarefa-feita.png"></sub><sup>Tarefa:Hospedagem de sites</a></sup></h3>
 		<br>
 
 		<h2>25 agosto - 31 agosto</h2>
 		<br>
-		<h3><sub><a href="html-base/pagina_angular.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Tarefa:Manual Angular</a></sup></h3>
+		<h3><sub><a href="html-base/pagina_angular.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Tarefa:Manual
+				Angular</a></sup></h3>
 		<br>
 
 		<h2>1 setembro - 7 setembro</h2>
 		<br>
-		<h3><sub><a href="html-base/tarefa-lista.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Tarefa:Modelos de Listas</a></sup></h3>
+		<h3><sub><a href="html-base/tarefa-lista.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Tarefa:Modelos de
+				Listas</a></sup></h3>
 		<br>
-		<h3><sub><a href="html-base/listas.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Aula:Listas</a></sup></h3>
+		<h3><sub><a href="html-base/listas.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Aula:Listas</a></sup>
+		</h3>
 		<br>
 
 
 		<h2>8 setembro - 14 setembro</h2>
 		<br>
-		<h3><sub><a href="forms/formulario.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Tarefa:Formulários</a></sup></h3>
+		<h3><sub><a href="forms/formulario.html"><img
+						src="../imgs/tarefa-feita.png"></sub><sup>Tarefa:Formulários</a></sup></h3>
 		<br>
 
-		<h2>15 setembro - 21 setembro</h2>	
-		<br>	
-		<h3><sub><a href="html_css/intro_css.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Tarefa:7 - Introdução ao CSS</a></sup></h3>
+		<h2>15 setembro - 21 setembro</h2>
+		<br>
+		<h3><sub><a href="html_css/intro_css.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Tarefa:7 - Introdução
+				ao CSS</a></sup></h3>
 		<br>
 
-		<h2>22 setembro - 28 setembro</h2>		
+		<h2>22 setembro - 28 setembro</h2>
 		<br>
-		<h3><sub><a href="https://www.youtube.com/watch?v=T6UDjGfeaFU&t=6s"><img src="../imgs/tarefa-feita.png"></sub><sup>Youtube:Menu Navbar Responsivo</a></sup></h3>
-		<br>
-
-		<h2>29 setembro - 4 outubro / Atividades de CSS</h2>		
-		<br>
-		<h3><sub><a href="../menu_resp/menu_jorci.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Menu trabalhado em sala</a></sup></h3>
-		<br>
-		<h3><sub><a href="forms/formCSS.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Formulario Estilizado CSS</a></sup></h3>
+		<h3><sub><a href="https://www.youtube.com/watch?v=T6UDjGfeaFU&t=6s" target="_blank"><img
+						src="../imgs/tarefa-feita.png"></sub><sup>Youtube:Menu Navbar Responsivo</a></sup>
+			<br>Foi esse menu que eu coloquei no meu site.
+		</h3>
 		<br>
 
-		<h2>18 outubro - 25 outubro / Atividade combustível</h2>		
+		<h2>29 setembro - 4 outubro / Atividades de CSS</h2>
 		<br>
-		<h3><sub><a href="combustivel/combustivel.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Calcula entre etanol e gasolina</a></sup></h3>
+		<h3><sub><a href="../menu_resp/menu_jorci.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Menu trabalhado
+				em sala</a></sup></h3>
+		<br>
+		<h3><sub><a href="forms/formCSS.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Formulario Estilizado
+				CSS</a></sup></h3>
 		<br>
 
-		<h2>3 novembro - 9 novembro / Aplicação com JS</h2>		
+		<h2>18 outubro - 25 outubro / Atividade combustível</h2>
 		<br>
-		<h3><sub><a href="televisao/televisao.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Televisão com um controle remoto</a></sup></h3>
+		<h3><sub><a href="combustivel/combustivel.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Calcula entre
+				etanol e gasolina</a></sup></h3>
+		<br>
+
+		<h2>3 novembro - 9 novembro / Aplicação com JS</h2>
+		<br>
+		<h3><sub><a href="televisao/televisao.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Televisão com um
+				controle remoto</a></sup></h3>
 		<br>
 
 		<br><br>
 		<h1>Extras</h1>
 		<br>
-		<h3><sub><a href="tarefas/html-base/basico.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Tags Basicas</a></sup></h3>
+		<h3><sub><a href="html-base/basico.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Tags
+				Basicas</a></sup></h3>
 		<br>
-		<h3><sub><a href="tarefas/html-base/pagina1.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Ancora nos titulos</a></sup></h3>
+		<h3><sub><a href="html-base/pagina1.html"><img src="../imgs/tarefa-feita.png"></sub><sup>Ancora nos
+				titulos</a></sup></h3>
 		<br>
 
-		
+
 
 
 
 		<br><br>
 		<center><b>
-		<footer>
-			<a target="_blank" href="https://icons8.com/icon/oZiSenCiacAl/auditoria"></a>Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
-			<p>&copy; 2023 Meu Site. Todos os direitos reservados a mim mesmo.</p>
-		</footer>
+				<footer>
+					<a target="_blank" href="https://icons8.com/icon/oZiSenCiacAl/auditoria"></a>Icons by <a
+						target="_blank" href="https://icons8.com">Icons8</a>
+					<p>&copy; 2023 Meu Site. Todos os direitos reservados a mim mesmo.</p>
+				</footer>
 	</main>
-	</body>
+</body>
+
 </html>

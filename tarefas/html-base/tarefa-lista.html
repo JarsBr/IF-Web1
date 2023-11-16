@@ -1,126 +1,150 @@
 <!DOCKTYPE html>
-<html lang="pt-br">
-<head>
-	<link rel="shortcut icon" href="../../imgs/logo2.png"> 
-   	<meta charset="utf-8"/> 
-   	<title>Aula-Listas</title> 
-</head>
-<body>
-    <a href="../menu-tarefas.html">Voltar</a>
-	<h1> Listas </h1>
+	<html lang="pt-br">
 
-	<h2>Lista sem marcador</h2>
-	
-	<dl>
-		<dt>Font-end</dt>
-		<dd>HTML</dd>
-		<dd>CSS</dd>
-		<dd>JavaScript</dd>
-		<dd>TypeScript</dd>
-		<dd>React</dd>
-		<dd>Angular</dd>
-		<dd>Vue.js</dd>
-		<dd>Bootstrap</dd>
-	</dl>
-	<dl> - onde o termo é proposto
-	<dd> - onde o termo é definido</dd>
-	
-	<h2>Lista com marcador</h2>
-	<h2> Não ordenada</h2>
-	
-	<h3> type="disc" (default)</h3>
-	<ul type="disc">
-		<li>Carro</li>
-		<li>Moto</li>
-		<li>Ônibus</li>
-		<li>Avião</li>
-	</ul>
-	
-	<h3> type="circle" </h3>
-	<ul type="circle">
-		<li>Carro</li>
-		<li>Moto</li>
-		<li>Ônibus</li>
-		<li>Avião</li>
-	</ul>
-	
-	<h3> type="square" </h3>
-	<ul type="square">
-		<li>Carro</li>
-		<li>Moto</li>
-		<li>Ônibus</li>
-		<li>Avião</li>
-	</ul>
-	
-	<h2> Ordenada</h2>
-	
-	<h3> type="1" (default) </h3>
-	<ol type="1">
-		<li>Carro</li>
-		<li>Moto</li>
-		<li>Ônibus</li>
-		<li>Avião</li>
-		<li>Bike</li>
-		<li>Skate</li>
-	</ol>
-	
-	<h3> start="9" </h3>
-	<ol start="9">
-		<li>Carro</li>
-		<li>Moto</li>
-		<li>Ônibus</li>
-		<li>Avião</li>
-		<li>Bike</li>
-		<li>Skate</li>
-	</ol>
-		
-	<h3> type="a" </h3>
-	<ol type="a">
-		<li>Carro</li>
-		<li>Moto</li>
-		<li>Ônibus</li>
-		<li>Avião</li>
-		<li>Bike</li>
-		<li>Skate</li>
-	</ol>
-	
-	<h3> type="A" </h3>
-	<ol type="A">
-		<li>Carro</li>
-		<li>Moto</li>
-		<li>Ônibus</li>
-		<li>Avião</li>
-		<li>Bike</li>
-		<li>Skate</li>
-	</ol>
-	
-	<h3> type="i" </h3>
-	<ol type="i">
-		<li>Carro</li>
-		<li>Moto</li>
-		<li>Ônibus</li>
-		<li>Avião</li>
-		<li>Bike</li>
-		<li>Skate</li>
-	</ol>
-	
-	<h3> type="I" </h3>
-	<ol type="I">
-		<li>Carro</li>
-		<li>Moto</li>
-		<li>Ônibus</li>
-		<li>Avião</li>
-		<li>Bike</li>
-		<li>Skate</li>
-	</ol>
-		
-	<h2> Inserir figuras </h2>
-	
-	<figure>
-		<img src="../../imgs/html.png" alt="Tutorial de CSS" title="Logo do CSS" width="150" height="150"/>
-		<figcaption> Aula de HTML5</figcaption>
-		</figure>
-	
-		
-</body>
-</html>
+	<head>
+		<link rel="shortcut icon" href="../../imgs/logo2.png">
+		<meta charset="utf-8" />
+		<title>Aula-Listas</title>
+		<script defer src="../../menu_resp/menu.js"></script>
+		<link rel="stylesheet" href="../../menu_resp/menu.css">
+	</head>
+
+	<body>
+
+		<header class="header">
+			<div class="menu-container"></div>
+			<script>
+
+				const linkLogoMenu = '../../imgs/logo-menu.png';
+				const linkHamburger = '../../imgs/menu-hamburger.png';
+
+				const menuItems = [
+					{ text: 'Voltar', link: '../menu-tarefas.html' },
+					{ text: '...', link: '#' },
+					{ text: '...', link: '#' }
+				];
+
+				document.addEventListener("DOMContentLoaded", function () {
+					createMenu(menuItems, linkLogoMenu, linkHamburger);
+				});
+			</script>
+		</header>
+		<br>
+		<h1> Listas </h1>
+
+		<h2>Lista sem marcador</h2>
+
+		<dl>
+			<dt>Font-end</dt>
+			<dd>HTML</dd>
+			<dd>CSS</dd>
+			<dd>JavaScript</dd>
+			<dd>TypeScript</dd>
+			<dd>React</dd>
+			<dd>Angular</dd>
+			<dd>Vue.js</dd>
+			<dd>Bootstrap</dd>
+		</dl>
+		<dl> - onde o termo é proposto
+			<dd> - onde o termo é definido</dd>
+
+			<h2>Lista com marcador</h2>
+			<h2> Não ordenada</h2>
+
+			<h3> type="disc" (default)</h3>
+			<ul type="disc">
+				<li>Carro</li>
+				<li>Moto</li>
+				<li>Ônibus</li>
+				<li>Avião</li>
+			</ul>
+
+			<h3> type="circle" </h3>
+			<ul type="circle">
+				<li>Carro</li>
+				<li>Moto</li>
+				<li>Ônibus</li>
+				<li>Avião</li>
+			</ul>
+
+			<h3> type="square" </h3>
+			<ul type="square">
+				<li>Carro</li>
+				<li>Moto</li>
+				<li>Ônibus</li>
+				<li>Avião</li>
+			</ul>
+
+			<h2> Ordenada</h2>
+
+			<h3> type="1" (default) </h3>
+			<ol type="1">
+				<li>Carro</li>
+				<li>Moto</li>
+				<li>Ônibus</li>
+				<li>Avião</li>
+				<li>Bike</li>
+				<li>Skate</li>
+			</ol>
+
+			<h3> start="9" </h3>
+			<ol start="9">
+				<li>Carro</li>
+				<li>Moto</li>
+				<li>Ônibus</li>
+				<li>Avião</li>
+				<li>Bike</li>
+				<li>Skate</li>
+			</ol>
+
+			<h3> type="a" </h3>
+			<ol type="a">
+				<li>Carro</li>
+				<li>Moto</li>
+				<li>Ônibus</li>
+				<li>Avião</li>
+				<li>Bike</li>
+				<li>Skate</li>
+			</ol>
+
+			<h3> type="A" </h3>
+			<ol type="A">
+				<li>Carro</li>
+				<li>Moto</li>
+				<li>Ônibus</li>
+				<li>Avião</li>
+				<li>Bike</li>
+				<li>Skate</li>
+			</ol>
+
+			<h3> type="i" </h3>
+			<ol type="i">
+				<li>Carro</li>
+				<li>Moto</li>
+				<li>Ônibus</li>
+				<li>Avião</li>
+				<li>Bike</li>
+				<li>Skate</li>
+			</ol>
+
+			<h3> type="I" </h3>
+			<ol type="I">
+				<li>Carro</li>
+				<li>Moto</li>
+				<li>Ônibus</li>
+				<li>Avião</li>
+				<li>Bike</li>
+				<li>Skate</li>
+			</ol>
+
+			<h2> Inserir figuras </h2>
+
+			<figure>
+				<img src="../../imgs/html.png" alt="Tutorial de CSS" title="Logo do CSS" width="150" height="150" />
+				<figcaption> Aula de HTML5</figcaption>
+			</figure>
+
+
+	</body>
+
+	</html>

@@ -6,10 +6,36 @@
 		<meta name="viewport" content="initial-scale=1.0" />
     <link rel="stylesheet" href="../forms/style_form.css">
     <title>Smart TV</title>
+    <script defer src="../../menu_resp/menu.js"></script>
+    <link rel="stylesheet" href="../../menu_resp/menu.css">
 </head>
 <body>
   
-  <a href="../menu-tarefas.html">Voltar</a>
+  
+  <header class="header">
+    <div class="menu-container"></div>
+    <script>
+
+      const linkLogoMenu = '../../imgs/logo-menu.png';
+      const linkHamburger = '../../imgs/menu-hamburger.png';
+
+      const menuItems = [
+        { text: 'Voltar', link: '../menu-tarefas.html' },
+        { text: '...', link: '#' },
+        { text: '...', link: '#' }
+      ];
+
+      document.addEventListener("DOMContentLoaded", function () {
+        createMenu(menuItems, linkLogoMenu, linkHamburger);
+      });
+    </script>
+  </header>
+  <br>
+<style>
+  .box{
+    margin: 2%;
+  }
+</style>
   <div class="box">
   <h1>Televisão - <span id="status">Desligada</span></h1>
 

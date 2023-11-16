@@ -4,6 +4,8 @@
     <link rel="shortcut icon" href="imgs/logo2.png">
     <meta charset="UTF-8">
     <title>Intro CSS</title>
+    <script defer src="../../menu_resp/menu.js"></script>
+    <link rel="stylesheet" href="../../menu_resp/menu.css">
 
     <style>
         h2 {
@@ -15,7 +17,25 @@
 
 </head>
 <body>
-    <p><a href="../../index.html">Menu Principal</a></p><br>
+    <header class="header">
+        <div class="menu-container"></div>
+        <script>
+
+            const linkLogoMenu = '../../imgs/logo-menu.png';
+            const linkHamburger = '../../imgs/menu-hamburger.png';
+
+            const menuItems = [
+                { text: 'Voltar', link: '../menu-tarefas.html' },
+                { text: '...', link: '#' },
+                { text: '...', link: '#' }
+            ];
+
+            document.addEventListener("DOMContentLoaded", function () {
+                createMenu(menuItems, linkLogoMenu, linkHamburger);
+            });
+        </script>
+    </header>
+    <br>
     <h1>CSS3</h1>
     <h2>Oque é CSS (Cascading Style Sheets)</h2>
     

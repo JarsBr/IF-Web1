@@ -1,25 +1,49 @@
-<!DOCTYPE html> 
-<html lang="pt-br"> 
-	<head> 
-   		<link rel="shortcut icon" href="imgs/logo2.png"> 
-   		<meta charset="utf-8"/> 
-   		<title>Tarefa-Formulario</title> 
-	</head> 
-	<body> 
-	<h4><p><a href="../../index.html">Menu Principal</a></p>></h4>
-	
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<link rel="shortcut icon" href="imgs/logo2.png">
+	<meta charset="utf-8" />
+	<title>Tarefa-Formulario</title>
+	<script defer src="../../menu_resp/menu.js"></script>
+	<link rel="stylesheet" href="../../menu_resp/menu.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="menu-container"></div>
+		<script>
+
+			const linkLogoMenu = '../../imgs/logo-menu.png';
+			const linkHamburger = '../../imgs/menu-hamburger.png';
+
+			const menuItems = [
+				{ text: 'Voltar', link: '../menu-tarefas.html' },
+				{ text: '...', link: '#' },
+				{ text: '...', link: '#' }
+			];
+
+			document.addEventListener("DOMContentLoaded", function () {
+				createMenu(menuItems, linkLogoMenu, linkHamburger);
+			});
+		</script>
+	</header>
+
+	<br>
+
 	<center>
-	<font face="Consolas" size="4">
-	<h2>Formularios</h2>
-	<dl>
-		<dt><a href="form1.html">Form1(Cadastro)</a></dt>
-		<dt><a href="form2.html">Form2(Login)</a></dt>
-		<dt><a href="form3.html">Form3(Avaliaçao de Evento)</a></dt>
-		<dt><a href="form4.html">Form4(Pesquisa de Emprego)</a></dt>
-		<dt><a href="form5.html">Form5(Envio de Tarefa)</a></dt>
-	</dl>
-	
-	</body> 
+		<font face="Consolas" size="4">
+			<h2>Formularios</h2>
+			<dl>
+				<dt><a href="form1.html">Form1(Cadastro)</a></dt>
+				<dt><a href="form2.html">Form2(Login)</a></dt>
+				<dt><a href="form3.html">Form3(Avaliaçao de Evento)</a></dt>
+				<dt><a href="form4.html">Form4(Pesquisa de Emprego)</a></dt>
+				<dt><a href="form5.html">Form5(Envio de Tarefa)</a></dt>
+			</dl>
+
+</body>
 
 
-</html> 
+</html>

@@ -1,54 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<link rel="shortcut icon" href="imgs/logo.png">
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="initial-scale=1.0" />
-		<link rel="stylesheet" href="menu_resp/style.css">
-		<script defer src="menu_resp/menu.js"></script>
-		<title>Menu</title>
-	</head>
-	<body>
-		<header class="header">
-			<nav class="nav">
-				<a href="" class="logo"><img src="imgs/logo-menu.png" alt=""></a>
-				<button class="hamburger"><img src="imgs/menu-hamburger.png" alt=""></button>
-				<ul class="nav-list">
-					<li><a href="">Projeto Sala</a></li>
-					<li><a href="">Projeto Angular</a></li>
-					<li><a href="tarefas/menu-tarefas.html">Tarefas</a></li>
-				</ul>
-			</nav>
-		</header>
 
-		
-		<br>
+<head>
+	<link rel="shortcut icon" href="imgs/logo.png">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0" />
+	<link rel="stylesheet" href="menu_resp/menu.css">
+	<script defer src="menu_resp/menu.js"></script>
+	<title>Menu</title>
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="menu-container"></div>
+		<script>
+
+			const linkLogoMenu = 'imgs/logo-menu.png';
+			const linkHamburger = 'imgs/menu-hamburger.png';
+
+			const menuItems = [
+				{ text: 'Tarefas', link: 'tarefas/menu-tarefas.html' },
+				{ text: 'Projeto Angular', link: 'https://angular-jars.netlify.app', target: '_blank' },
+				{ text: 'Projeto Sala', link: '' }
+			];
+
+			document.addEventListener("DOMContentLoaded", function () {
+				createMenu(menuItems, linkLogoMenu, linkHamburger);
+			});
+		</script>
+	</header>
+
+	<br>
+
+	<div class="texto-index">
 		<p>
-			Projeto sala: Um site estilo blog/wikipedia sobre herois
+			Projeto sala: Em Breve
 		</p>
+	</div>
 
 
-		<br>
+
+	<br>
+
+	<div class="texto-index">
 		<p>
-			Projeto angular: Conversor de Unidades
+			Projeto angular: Uma pequena wiki sobre minecraft
 		</p>
+	</div>
+
+	<br>
+
+	<div class="texto-index">
 		<p>
-			Desenvolva uma aplicação que permita aos usuários converter entre diferentes unidades, como moedas, unidades de medida, ou unidades de temperatura.
+			Animaçao CSS: No menu hamburger os item aparecem de cima para baixo
 		</p>
-
-		<br>
-		<p>
-			Animaçao CSS: No menu hamburger os item aparecem de cima para baixo 
-		</p>
-		
+	</div>
 
 
-		<br><br>
-		<center><b>
-		<footer>
-			<a target="_blank" href="https://icons8.com/icon/oZiSenCiacAl/auditoria"></a>Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
-			<p>&copy; 2023 Meu Site. Todos os direitos reservados a mim mesmo.</p>
-		</footer>
+
+	<br><br>
+	<center><b>
 	</main>
-	</body>
+
+	<footer>
+		<a target="_blank" href="https://icons8.com/icon/oZiSenCiacAl/auditoria"></a>Icons by <a target="_blank"
+			href="https://icons8.com">Icons8</a>
+		<p>&copy; 2023 Meu Site. Todos os direitos reservados a mim mesmo.</p>
+	</footer>
+
+</body>
+
 </html>
