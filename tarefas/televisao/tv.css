@@ -35,18 +35,31 @@ padding: 10px;
   }
 
   .control-buttons {
-    max-width: 10px;
-    background-color: gray;
-    align-items: center;
-    padding: 10%;
     display: flex;
-
-    /* Seus estilos para os botões de controle */
+    align-items: center;
+    padding: 20px;
   }
   
   /* Estilos para os indicadores */
   .volume-indicator,
   .channel-indicator {
     margin-bottom: 5px;
+  }
+
+  .remote-control {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc;
+    padding: 10px;
+  }
+  
+  .button-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  
+  .buttons {
+    margin: 5px;
   }
   

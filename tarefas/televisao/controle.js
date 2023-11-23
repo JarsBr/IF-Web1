@@ -7,6 +7,7 @@ function ligarDesligar() {
   if (tvLigada) {
     videoPlayer.style.display = 'none';
     blackScreen.style.backgroundImage = 'url("img/nada.jpg")';
+    videoPlayer.volume = 0;
   } else {
     videoPlayer.style.display = 'block';
     blackScreen.style.backgroundImage = 'none';
@@ -53,3 +54,7 @@ function atualizarIndicadorVolume(volume) {
   const volumePorcentagem = Math.round(volume * 100);
   currentVolumeIndicator.textContent = volumePorcentagem + '%';
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  ligarDesligar();
+});

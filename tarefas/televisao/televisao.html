@@ -31,51 +31,78 @@
     </script>
   </header>
 
+  <script>
+    ligarDesligar();
+</script>
+
   <div class="main">
     <div class="tv">
       <video id="videoPlayer" width="600" height="400" controls autoplay>
         <source src="img/video1.mp4" type="video/mp4">
         Seu navegador não suporta vídeo HTML5.
       </video>
-            <!-- Indicador visual da imagem atual -->
+
+
+           
   <div class="image-indicator">
-    Imagem atual: <span id="currentImageIndicator">Vídeo 1</span>
+    CANAL: <span id="currentImageIndicator">1</span>
   </div>
 
-  <!-- Indicador visual de volume -->
   <div class="volume-indicator">
-    Volume: <span id="currentVolumeIndicator">100%</span>
+    Volume: <span id="currentVolumeIndicator">100</span>
   </div>
     </div>
 
-
-
-  <div class="control-buttons">
-    <div class="controle">
-      <div class="linha">
-        <button onclick="ligarDesligar()">Ligar/Desligar</button>
-      </div>
-      <div class="linha">
-        <button onclick="mudarVideo('img/video1.mp4')">1</button>
-        <button onclick="mudarVideo('img/video2.mp4')">2</button>
-        <button onclick="mudarVideo('img/video3.mp4')">3</button>
-      </div>
-      <div class="linha">
-        <button onclick="mudarVideo('img/video4.mp4')">4</button>
-        <button onclick="mudarVideo('img/video5.mp4')">5</button>
-        <button onclick="mudarVideo('img/video6.mp4')">6</button>
-      </div>
-      <div class="linha">
-        <button onclick="mudarVideo('img/video7.mp4')">7</button>
-        <button onclick="mudarVideo('img/video8.mp4')">8</button>
-        <button onclick="mudarVideo('img/video9.mp4')">9</button>
-      </div>
-      <div class="linha">
-        <button onclick="aumentarVolume()">-</button>
-        <button onclick="diminuirVolume()">+</button>
+    <div class="control-buttons">
+      <div class="remote-control">
+        <div class="button-row">
+          <div class="buttons">
+            <button onclick="ligarDesligar()">Ligar/Desligar</button>
+          </div>
+        </div>
+        <div class="button-row">
+          <div class="buttons">
+            <button onclick="mudarVideo('img/video1.mp4')">1</button>
+          </div>
+          <div class="buttons">
+            <button onclick="mudarVideo('img/video2.mp4')">2</button>
+          </div>
+          <div class="buttons">
+            <button onclick="mudarVideo('img/video3.mp4')">3</button>
+          </div>
+        </div>
+        <div class="button-row">
+          <div class="buttons">
+            <button onclick="mudarVideo('img/video4.mp4')">4</button>
+          </div>
+          <div class="buttons">
+            <button onclick="mudarVideo('img/video5.mp4')">5</button>
+          </div>
+          <div class="buttons">
+            <button onclick="mudarVideo('img/video6.mp4')">6</button>
+          </div>
+        </div>
+        <div class="button-row">
+          <div class="buttons">
+            <button onclick="mudarVideo('img/video7.mp4')">7</button>
+          </div>
+          <div class="buttons">
+            <button onclick="mudarVideo('img/video8.mp4')">8</button>
+          </div>
+          <div class="buttons">
+            <button onclick="mudarVideo('img/video9.mp4')">9</button>
+          </div>
+        </div>
+        <div class="button-row">
+          <div class="buttons">
+            <button onclick="diminuirVolume()">-</button>
+          </div>
+          <div class="buttons">
+            <button onclick="aumentarVolume()">+</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
   </div>
 
   <script src="controle.js"></script>
