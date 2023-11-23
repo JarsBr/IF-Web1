@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<link rel="shortcut icon" href="imgs/logo.png">
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="initial-scale=1.0" />
-    <link rel="stylesheet" href="../forms/style_form.css">
-    <title>Smart TV</title>
-    <script defer src="../../menu_resp/menu.js"></script>
-    <link rel="stylesheet" href="../../menu_resp/menu.css">
+
+<head>
+  <link rel="shortcut icon" href="imgs/logo.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1.0" />
+  <link rel="stylesheet" href="../forms/style_form.css">
+  <title>Smart TV</title>
+  <script defer src="../../menu_resp/menu.js"></script>
+  <link rel="stylesheet" href="../../menu_resp/menu.css">
+  <link rel="stylesheet" href="tv.css">
 </head>
+
 <body>
-  
-  
   <header class="header">
     <div class="menu-container"></div>
     <script>
-
       const linkLogoMenu = '../../imgs/logo-menu.png';
       const linkHamburger = '../../imgs/menu-hamburger.png';
 
@@ -30,42 +30,55 @@
       });
     </script>
   </header>
-  <br>
-<style>
-  .box{
-    margin: 2%;
-  }
-</style>
-  <div class="box">
-  <h1>Televisão - <span id="status">Desligada</span></h1>
 
-  <div id="tv">
-    <h3>Canal: <span id="canal">1</span></h3>
-    <h3>Volume: <span id="volume">10</span></h3>
+  <div class="main">
+    <div class="tv">
+      <video id="videoPlayer" width="600" height="400" controls autoplay>
+        <source src="img/video1.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+            <!-- Indicador visual da imagem atual -->
+  <div class="image-indicator">
+    Imagem atual: <span id="currentImageIndicator">Vídeo 1</span>
   </div>
 
-  <div id="controle-remoto">
-    <fieldset>
-      <legend>Televisão</legend>
-    <button class="button" id="ligarDesligar">Ligar/Desligar</button>
-    <br><br>
-    <button class="button" id="infoCanal">Info do Canal</button>
-    </fieldset>
-    <fieldset>
-      <legend>Canal</legend>
-    <button class="button" id="canalAnterior">Canal Anterior</button>
-    <br><br>
-    <button class="button" id="proximoCanal">Próximo Canal</button>
-    </fieldset>
-    <fieldset>
-      <legend>Volume</legend>
-    <button class="button" id="diminuirVolume">Diminuir Volume</button>
-    <br><br>
-    <button class="button" id="aumentarVolume">Aumentar Volume</button>
-  </fieldset>
-    
+  <!-- Indicador visual de volume -->
+  <div class="volume-indicator">
+    Volume: <span id="currentVolumeIndicator">100%</span>
   </div>
-</div>
-  <script src="controle.js"> </script>
+    </div>
+
+
+
+  <div class="control-buttons">
+    <div class="controle">
+      <div class="linha">
+        <button onclick="ligarDesligar()">Ligar/Desligar</button>
+      </div>
+      <div class="linha">
+        <button onclick="mudarVideo('img/video1.mp4')">1</button>
+        <button onclick="mudarVideo('img/video2.mp4')">2</button>
+        <button onclick="mudarVideo('img/video3.mp4')">3</button>
+      </div>
+      <div class="linha">
+        <button onclick="mudarVideo('img/video4.mp4')">4</button>
+        <button onclick="mudarVideo('img/video5.mp4')">5</button>
+        <button onclick="mudarVideo('img/video6.mp4')">6</button>
+      </div>
+      <div class="linha">
+        <button onclick="mudarVideo('img/video7.mp4')">7</button>
+        <button onclick="mudarVideo('img/video8.mp4')">8</button>
+        <button onclick="mudarVideo('img/video9.mp4')">9</button>
+      </div>
+      <div class="linha">
+        <button onclick="aumentarVolume()">-</button>
+        <button onclick="diminuirVolume()">+</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="controle.js"></script>
 </body>
+
 </html>

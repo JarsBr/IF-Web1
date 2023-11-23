@@ -1,59 +1,55 @@
-let tvLigada = false;
-    let canalAtual = 1;
-    let volumeAtual = 10;
+let tvLigada = true;
 
-    const canalSpan = document.getElementById('canal');
-    const volumeSpan = document.getElementById('volume');
-    const statusSpan = document.getElementById('status');
+function ligarDesligar() {
+  const videoPlayer = document.getElementById('videoPlayer');
+  const blackScreen = document.querySelector('.tv');
 
-    const ligarDesligarButton = document.getElementById('ligarDesligar');
-    const canalAnteriorButton = document.getElementById('canalAnterior');
-    const proximoCanalButton = document.getElementById('proximoCanal');
-    const aumentarVolumeButton = document.getElementById('aumentarVolume');
-    const diminuirVolumeButton = document.getElementById('diminuirVolume');
-    const infoCanalButton = document.getElementById('infoCanal');
+  if (tvLigada) {
+    videoPlayer.style.display = 'none';
+    blackScreen.style.backgroundImage = 'url("img/nada.jpg")';
+  } else {
+    videoPlayer.style.display = 'block';
+    blackScreen.style.backgroundImage = 'none';
+  }
 
-    ligarDesligarButton.addEventListener('click', function() {
-      tvLigada = !tvLigada;
-      statusSpan.textContent = tvLigada ? 'Ligada' : 'Desligada';
-    });
+  tvLigada = !tvLigada;
+}
 
-    canalAnteriorButton.addEventListener('click', function() {
-      if (tvLigada && canalAtual != 1) {
-        canalAtual = Math.max(1, canalAtual - 1);
-        canalSpan.textContent = canalAtual;
-      }else if(tvLigada && canalAtual == 1){
-        canalAtual = 10;
-        canalSpan.textContent = canalAtual;
-      }
-    });
+function mudarVideo(caminho) {
+  const videoPlayer = document.getElementById('videoPlayer');
+  videoPlayer.src = caminho;
+  videoPlayer.load();
 
-    proximoCanalButton.addEventListener('click', function() {
-      if (tvLigada && canalAtual != 10) {
-        canalAtual = Math.min(10, canalAtual + 1);
-        canalSpan.textContent = canalAtual;
-      }else if(tvLigada && canalAtual == 10){
-        canalAtual = 1;
-        canalSpan.textContent = canalAtual;
-      }
-    });
+  atualizarIndicadorImagem(caminho); // Chama a função para atualizar o indicador de imagem atual
 
-    aumentarVolumeButton.addEventListener('click', function() {
-      if (tvLigada) {
-        volumeAtual = Math.min(20, volumeAtual + 1);
-        volumeSpan.textContent = volumeAtual;
-      }
-    });
+}
 
-    diminuirVolumeButton.addEventListener('click', function() {
-      if (tvLigada) {
-        volumeAtual = Math.max(0, volumeAtual - 1);
-        volumeSpan.textContent = volumeAtual;
-      }
-    });
+function aumentarVolume() {
+  const videoPlayer = document.getElementById('videoPlayer');
+  if (videoPlayer.volume < 1.0) {
+    videoPlayer.volume = Math.min(videoPlayer.volume + 0.1, 1.0);
+    atualizarIndicadorVolume(videoPlayer.volume); // Chama a função para atualizar o indicador de volume
+  }
+}
 
-    infoCanalButton.addEventListener('click', function() {
-      if (tvLigada) {
-        alert(`Canal ${canalAtual}: Canal Livre Para Todos os Publicos`);
-      }
-    });
+function diminuirVolume() {
+  const videoPlayer = document.getElementById('videoPlayer');
+  if (videoPlayer.volume > 0.0) {
+    videoPlayer.volume = Math.max(videoPlayer.volume - 0.1, 0.0);
+    atualizarIndicadorVolume(videoPlayer.volume); // Chama a função para atualizar o indicador de volume
+  }
+}
+
+// Função para atualizar o indicador de imagem atual
+function atualizarIndicadorImagem(caminho) {
+  const currentImageIndicator = document.getElementById('currentImageIndicator');
+  const videoName = caminho.split('/').pop().split('.')[0]; // Extrai o nome do vídeo do caminho
+  currentImageIndicator.textContent = videoName;
+}
+
+// Função para atualizar o indicador de volume
+function atualizarIndicadorVolume(volume) {
+  const currentVolumeIndicator = document.getElementById('currentVolumeIndicator');
+  const volumePorcentagem = Math.round(volume * 100);
+  currentVolumeIndicator.textContent = volumePorcentagem + '%';
+}

@@ -1,0 +1,52 @@
+.main {
+    display: flex;
+    justify-content: space-between; /* Coloca as divs no extremo oposto */
+    padding: 20px;
+    margin: 3%;
+  }
+  
+  .tv-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha à esquerda */
+  }
+  
+  .tv {
+    align-items: center;
+    width: 600px; /* Defina o tamanho desejado para a TV */
+    height: 400px;
+    /* Outros estilos para a TV */
+  }
+  
+  .indicators {
+    margin-top: 20px; /* Espaçamento entre a TV e os indicadores */
+  }
+  
+  
+  .control-container {
+    display: flex;
+    align-items: center; /* Alinha à direita */
+    padding: 100px;
+  }
+
+  .linha{
+    align-items: center;
+padding: 10px;
+  }
+
+  .control-buttons {
+    max-width: 10px;
+    background-color: gray;
+    align-items: center;
+    padding: 10%;
+    display: flex;
+
+    /* Seus estilos para os botões de controle */
+  }
+  
+  /* Estilos para os indicadores */
+  .volume-indicator,
+  .channel-indicator {
+    margin-bottom: 5px;
+  }
+  
